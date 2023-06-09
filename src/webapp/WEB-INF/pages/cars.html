@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>CAR</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <table border="1" align="center">
+            <tr th:each="car : ${cars}">
+                <td th:text="${car.getCarBrand()}" style="font-size: 40px"></td>
+                <td th:text="${car.getModel()}" style="font-size: 40px"></td>
+                <td th:text="${car.getNumber()}" style="font-size: 40px"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
